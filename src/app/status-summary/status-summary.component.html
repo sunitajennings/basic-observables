@@ -1,0 +1,5 @@
+<p>Status Summary</p>
+<div *ngIf="status$ | async as status">
+<p>Running? {{status.running}}</p>
+<p>Current step? {{status.activeEndpoint}}</p>
+</div>

@@ -1,0 +1,6 @@
+<p>Active Stored Procedures</p>
+<ul *ngIf="status$ | async as status">
+  <li *ngFor="let sproc of status.activeStoredProcedures">{{sproc}}</li>
+  <li *ngIf="!status.activeStoredProcedures.length">None found</li>
+</ul>
+<p>{{message}}</p>
